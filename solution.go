@@ -22,8 +22,8 @@ func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 
 	var square float64
 	if sidesNum == 3 {
-		p := (sideLen + sideLen + sideLen) / 2
-		square = math.Sqrt(p * (p - sideLen) * (p - sideLen) * (p - sideLen))
+		i := (sideLen + sideLen + sideLen) / 2
+		square = math.Sqrt(i * (i - sideLen) * (i - sideLen) * (i - sideLen))
 	} else if sidesNum == 4 {
 		square = sideLen * sideLen
 	} else if sidesNum == 0 {
